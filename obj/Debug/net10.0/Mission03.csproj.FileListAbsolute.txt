@@ -12,3 +12,4 @@
 /Users/brandonprice/RiderProjects/Mission03/obj/Debug/net10.0/Mission03.pdb
 /Users/brandonprice/RiderProjects/Mission03/obj/Debug/net10.0/Mission03.genruntimeconfig.cache
 /Users/brandonprice/RiderProjects/Mission03/obj/Debug/net10.0/ref/Mission03.dll
+/Users/brandonprice/RiderProjects/Mission03/obj/Debug/net10.0/Mission03.sourcelink.json

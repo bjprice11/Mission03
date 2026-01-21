@@ -2,25 +2,28 @@ namespace Mission03;
 
 public class FoodItem
 {
+    //Sets variables to use later
     public string foodName = "";
     public string foodCategory = "";
     public int foodQuantity = 0;
     public DateOnly foodDate = new DateOnly();
-    public FoodItem FoodName()
+    
+    //Constructor to get input
+    public FoodItem()
     {
         Console.WriteLine("Enter Food Name");
-        foodName = Console.ReadLine();
+        this.foodName = Console.ReadLine();
         Console.WriteLine("Enter Category");
-        foodCategory = Console.ReadLine();
+        this.foodCategory = Console.ReadLine();
         Console.WriteLine("Quantity");
-        foodQuantity = int.Parse(Console.ReadLine());
-        if (foodQuantity < 0)
+        this.foodQuantity = int.Parse(Console.ReadLine());
+        //Error handling for negative numbers
+        if (this.foodQuantity < 0)
         {
             Console.WriteLine("Food Quantity cannot be negative, setting to 0.");
-            foodQuantity = 0;
+            this.foodQuantity = 0;
         }
         Console.WriteLine("Enter Expiration Date");
-        foodDate = DateOnly.Parse(Console.ReadLine());
-        return this;
+        this.foodDate = DateOnly.Parse(Console.ReadLine());
     }
 }
